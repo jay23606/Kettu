@@ -744,7 +744,9 @@
   .ks-thread .ui-tcc > .ui-tcc__body .ui-tcc__sections,
   .ks-thread .ui-tcc[data-open] > .ui-tcc__top,
   .ks-thread .ui-tcc[data-open] > .ui-tcc__body .ui-tcc__sections,
-  .ks-thread :is(.ui-tcc, .ui-tcc-group) > .ui-tcc__body {
+  .ks-thread .ui-tcc[data-open]::after,
+  .ks-thread :is(.ui-tcc, .ui-tcc-group) > .ui-tcc__body,
+  .ks-thread :is(.ui-tcc, .ui-tcc-group)[data-open] > .ui-tcc__body {
     transition: none;
   }
   .ks-thread .ui-tcc[data-status='running'] :is(.ui-tcc__name, .ui-tcc__summary) {
